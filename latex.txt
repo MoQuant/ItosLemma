@@ -1,0 +1,31 @@
+\begin{matrix}
+dS_t = \mu S_t dt + \sigma S_t dW_t\\
+X_t=log(S_t)\\
+df(S_t, t)=\dfrac{\partial f}{\partial t}dt+\dfrac{\partial f}{\partial 
+S_t}dS_t+\dfrac{\partial^2f}{\partial S_t^2}(dS_t)^2\\
+f(S_t) = log(S_t) \\
+\dfrac{\partial}{\partial S_t}log(S_t)=\dfrac{1}{S_t}\\
+\dfrac{\partial^2}{\partial S_t^2}log(S_t)=-\dfrac{1}{S_t^2}\\
+d(log(S_t))= \dfrac{\partial f}{\partial S_t}log(S_t)dS_t + \dfrac{1}{2} \dfrac{\partial^2 
+f}{\partial S_t^2}log(S_t)(dS_t)^2\\
+
+d(log(S_t))= \dfrac{\partial f}{\partial S_t}log(S_t)(\mu S_t dt + \sigma S_t dW_t) + \dfrac{1}{2} 
+\dfrac{\partial^2 f}{\partial S_t^2}log(S_t)(\mu S_t dt + \sigma S_t dW_t)^2\\
+(\mu S_t dt + \sigma S_t dW_t)^2=(\mu^2 S_t^2 dt^2)+2*\mu S_tdt \sigma S_t dW_t + 
+(\sigma^2S_t^2dW_t^2)\\ 
+d(log(S_t))=\dfrac{1}{S_t}(S_t(\mu dt+\sigma dW_t)) - \dfrac{1}{2S_t^2}\sigma^2 S_t^2dt\\
+d(log(S_t))=\mu dt + \sigma dW_t - \dfrac{1}{2}\sigma^2dt\\
+d(log(S_t))=\mu dt - \dfrac{1}{2}\sigma^2dt + \sigma dW_t\\
+d(log(S_t))=\Big (\mu - \dfrac{1}{2}\sigma^2 \Big )dt + \sigma dW_t\\
+dX=\Big (\mu - \dfrac{1}{2}\sigma^2 \Big )dt + \sigma dW_t\\
+\int_0^t dX=\int_0^t\Big (\mu - \dfrac{1}{2}\sigma^2 \Big )dt ds + \int_0^t \sigma dW_t ds\\
+\end{matrix}
+
+\begin{matrix}
+X_t-X_0 = \Big(\mu - \dfrac{1}{2} \sigma^2\Big)t+\sigma W_t\\
+X_t = X_0 + \Big(\mu - \dfrac{1}{2} \sigma^2\Big)t+\sigma W_t\\
+log(S_t)=log(S_0)+\Big(\mu - \dfrac{1}{2} \sigma^2\Big)t+\sigma W_t\\
+e^{log(S_t)}=e^{log(S_0)+\Big(\mu - \dfrac{1}{2} \sigma^2\Big)t+\sigma W_t}\\
+e^{log(S_t)}=e^{log(S_0)}e^{\Big(\mu - \dfrac{1}{2} \sigma^2\Big)t+\sigma W_t}\\
+S_t=S_0e^{\Big(\mu - \tfrac{1}{2}\sigma^2 \Big)t+\sigma W_t}
+\end{matrix}
