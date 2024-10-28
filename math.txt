@@ -1,0 +1,26 @@
+\begin{matrix}
+dS_t=\mu S_t dt + \sigma S_t dW_t\\
+f(S_t,t)=\dfrac{\partial f}{\partial t}dt+\dfrac{\partial f}{\partial 
+S_t}dS_t+\dfrac{1}{2}\dfrac{\partial f}{\partial S_t^2}(dS_t)^2\\
+X=ln(S_t)\\
+X^{'}=\dfrac{1}{S_t}\\
+X^{''}=-\dfrac{1}{S_t^2}\\
+0+\dfrac{1}{S_t}(\mu S_t dt + \sigma S_t dW_t) - 
+\dfrac{1}{2}\dfrac{1}{S_t^2}(\mu S_t dt + \sigma S_t dW_t)^2\\
+\begin{bmatrix}
+\mu^2S_t^2dt^2&\mu S_t dt \sigma S_t dW_t\\
+\mu S_t dt \sigma S_t dW_t&\sigma^2S_t^2dW_t^2
+\end{bmatrix}
+\\
+\mu dt + \sigma dW_t-\dfrac{1}{2}\dfrac{1}{S_t^2}(\sigma^2 S_t^2dW_t^2)\\
+\mu dt + \sigma dW_t-\dfrac{1}{2}\sigma^2 dt\\
+\Bigg(\mu - \dfrac{1}{2}\sigma^2 \Bigg )dt + \sigma dW_t\\
+\int_0^tdXdt=\int_0^t\Bigg (\mu - \dfrac{1}{2} \sigma^2 
+\Bigg)dt+\int_0^t\sigma dW_t\\
+X_t-X_0=\Bigg (\mu - \dfrac{1}{2}\sigma^2 \Bigg)t+\sigma W_t\\
+X_t= X_0 + \Bigg (\mu - \dfrac{1}{2}\sigma^2 \Bigg)t+\sigma W_t\\
+LN(S_t)=LN(S_0)+ \Bigg (\mu - \dfrac{1}{2}\sigma^2 \Bigg)t+\sigma W_t\\
+e^{LN(S_t)}=e^{LN(S_0)+ \Bigg (\mu - \dfrac{1}{2}\sigma^2 \Bigg)t+\sigma 
+W_t}\\
+S_t=S_0e^{\Bigg (\mu - \dfrac{1}{2}\sigma^2 \Bigg)t+\sigma W_t}
+\end{matrix}
